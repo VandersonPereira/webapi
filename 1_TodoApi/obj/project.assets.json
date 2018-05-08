@@ -12543,11 +12543,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/vanderson/Documentos/03_Estudos/01_C#/1_TodoApi/1_TodoApi.csproj",
+      "projectUniqueName": "/home/vanderson/repo/01_webapi/webapi/1_TodoApi/1_TodoApi.csproj",
       "projectName": "1_TodoApi",
-      "projectPath": "/home/vanderson/Documentos/03_Estudos/01_C#/1_TodoApi/1_TodoApi.csproj",
+      "projectPath": "/home/vanderson/repo/01_webapi/webapi/1_TodoApi/1_TodoApi.csproj",
       "packagesPath": "/home/vanderson/.nuget/packages/",
-      "outputPath": "/home/vanderson/Documentos/03_Estudos/01_C#/1_TodoApi/obj/",
+      "outputPath": "/home/vanderson/repo/01_webapi/webapi/1_TodoApi/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"

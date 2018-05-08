@@ -8,3 +8,13 @@
 /home/vanderson/Documentos/03_Estudos/01_C#/1_TodoApi/obj/Debug/netcoreapp2.0/1_TodoApi.AssemblyInfo.cs
 /home/vanderson/Documentos/03_Estudos/01_C#/1_TodoApi/obj/Debug/netcoreapp2.0/1_TodoApi.dll
 /home/vanderson/Documentos/03_Estudos/01_C#/1_TodoApi/obj/Debug/netcoreapp2.0/1_TodoApi.pdb
+/home/vanderson/repo/01_webapi/webapi/1_TodoApi/bin/Debug/netcoreapp2.0/1_TodoApi.deps.json
+/home/vanderson/repo/01_webapi/webapi/1_TodoApi/bin/Debug/netcoreapp2.0/1_TodoApi.runtimeconfig.json
+/home/vanderson/repo/01_webapi/webapi/1_TodoApi/bin/Debug/netcoreapp2.0/1_TodoApi.runtimeconfig.dev.json
+/home/vanderson/repo/01_webapi/webapi/1_TodoApi/bin/Debug/netcoreapp2.0/1_TodoApi.dll
+/home/vanderson/repo/01_webapi/webapi/1_TodoApi/bin/Debug/netcoreapp2.0/1_TodoApi.pdb
+/home/vanderson/repo/01_webapi/webapi/1_TodoApi/obj/Debug/netcoreapp2.0/1_TodoApi.csproj.CoreCompileInputs.cache
+/home/vanderson/repo/01_webapi/webapi/1_TodoApi/obj/Debug/netcoreapp2.0/1_TodoApi.AssemblyInfoInputs.cache
+/home/vanderson/repo/01_webapi/webapi/1_TodoApi/obj/Debug/netcoreapp2.0/1_TodoApi.AssemblyInfo.cs
+/home/vanderson/repo/01_webapi/webapi/1_TodoApi/obj/Debug/netcoreapp2.0/1_TodoApi.dll
+/home/vanderson/repo/01_webapi/webapi/1_TodoApi/obj/Debug/netcoreapp2.0/1_TodoApi.pdb

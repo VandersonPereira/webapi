@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace _1_TodoApi.Controllers
 {
-    [Route("api/[controller")]
+    [Route("api/[controller]")]
     public class TodoController : Controller
     {
         private readonly TodoContext _context;
