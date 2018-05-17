@@ -14,62 +14,63 @@ namespace _1_TodoApi.Controllers
         {
             _context = context;
 
-            if (_context.TodoItems.Count() == 0)
+            if (_context.TodoPeople.Count() == 0)
             {
-                _context.TodoItems.Add(new TodoItem { Name = "Item1" });
+                _context.TodoPeople.Add(new TodoPerson { Name = "Vanderson", LastName = "Pereira", IsOfAge = true });
                 _context.SaveChanges();
             }
         }
 
         [HttpGet]
-        public IEnumerable<TodoItem> GetAll()
+        public IEnumerable<TodoPerson> GetAll()
         {
-            return _context.TodoItems.ToList();
+            return _context.TodoPeople.ToList();
         }
 
         [HttpGet("{id}", Name = "GetTodo")]
         public IActionResult GetById(long id)
         {
-            var item = _context.TodoItems.FirstOrDefault(t => t.Id == id);
-            if (item == null)
+            var person = _context.TodoPeople.FirstOrDefault(t => t.Id == id);
+            if (person == null)
             {
                 return NotFound();
             }
-            return new ObjectResult(item);
+            return new ObjectResult(person);
         }
 
         [HttpPost]
-        public IActionResult Create([FromBody] TodoItem item)
+        public IActionResult Create([FromBody] TodoPerson person)
         {
-            if (item == null)
+            if (person == null)
             {
                 return BadRequest();
             }
 
-            _context.TodoItems.Add(item);
+            _context.TodoPeople.Add(person);
             _context.SaveChanges();
 
-            return CreatedAtRoute("GetTodo", new {id = item.Id}, item);
+            return CreatedAtRoute("GetTodo", new {id = person.Id}, person);
         }
 
         [HttpPut("{id}")]
-        public IActionResult Update(long id, [FromBody] TodoItem item)
+        public IActionResult Update(long id, [FromBody] TodoPerson person)
         {
-            if (item == null || item.Id != id)
+            if (person == null || person.Id != id)
             {
                 return BadRequest();
             }
 
-            var todo = _context.TodoItems.FirstOrDefault(t => t.Id == id);
+            var todo = _context.TodoPeople.FirstOrDefault(t => t.Id == id);
             if (todo == null)
             {
                 return NotFound();
             }
 
-            todo.IsComplete = item.IsComplete;
-            todo.Name = item.Name;
+            todo.IsOfAge = person.IsOfAge;
+            todo.Name = person.Name;
+            todo.LastName = person.LastName;
 
-            _context.TodoItems.Update(todo);
+            _context.TodoPeople.Update(todo);
             _context.SaveChanges();
             return new NoContentResult();
         }
@@ -77,16 +78,15 @@ namespace _1_TodoApi.Controllers
         [HttpDelete("{id}")]
         public IActionResult Delete(long id)
         {
-            var todo = _context.TodoItems.FirstOrDefault(t => t.Id == id);
+            var todo = _context.TodoPeople.FirstOrDefault(t => t.Id == id);
             if (todo == null)
             {
                 return NotFound();
             }
 
-            _context.TodoItems.Remove(todo);
+            _context.TodoPeople.Remove(todo);
             _context.SaveChanges();
             return new NoContentResult();
         }
-
     }
 }

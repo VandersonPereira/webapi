@@ -18,3 +18,4 @@
 /home/vanderson/repo/01_webapi/webapi/1_TodoApi/obj/Debug/netcoreapp2.0/1_TodoApi.AssemblyInfo.cs
 /home/vanderson/repo/01_webapi/webapi/1_TodoApi/obj/Debug/netcoreapp2.0/1_TodoApi.dll
 /home/vanderson/repo/01_webapi/webapi/1_TodoApi/obj/Debug/netcoreapp2.0/1_TodoApi.pdb
+/home/vanderson/repo/01_webapi/webapi/1_TodoApi/obj/Debug/netcoreapp2.0/1_TodoApi.csprojResolveAssemblyReference.cache
